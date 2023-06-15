@@ -7,7 +7,7 @@ const Title = () => {
   const {language} = useContext(AppContext);
     
   return (
-    <div>{data.language[language.status].title}</div>
+    <h1 className="text-white text-2xl">{data.language[language.status].title}</h1>
   )
 }
 

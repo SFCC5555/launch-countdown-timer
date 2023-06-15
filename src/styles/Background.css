@@ -1,0 +1,19 @@
+.backgroundViolet {
+    background-image: linear-gradient(to bottom, var(--veryDarkViolet), var(--darkViolet));
+}
+
+.backgroundMagenta {
+    background-image: linear-gradient(to bottom, var(--veryDarkMagenta), var(--darkMagenta));
+}
+
+.backgroundCyan {
+    background-image: linear-gradient(to bottom, var(--veryDarkCyan), var(--darkCyan));
+}
+
+.backgroundTeal {
+    background-image: linear-gradient(to bottom, var(--veryDarkTeal), var(--darkTeal));
+}
+
+.backgroundOrange {
+    background-image: linear-gradient(to bottom, var(--veryDarkOrange), var(--darkOrange));
+}
