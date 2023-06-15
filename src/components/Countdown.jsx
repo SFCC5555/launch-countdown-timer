@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext";
+import data from '../data.json';
 
 const Countdown = () => {
+
+  const {language} = useContext(AppContext);
 
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
@@ -83,10 +88,10 @@ const Countdown = () => {
 
   return (
     <div>
-      <p>{countdown.days} días</p>
-      <p>{countdown.hours} horas</p>
-      <p>{countdown.minutes} minutos</p>
-      <p>{countdown.seconds} segundos</p>
+      <p>{countdown.days} {data.language[language.status].days}</p>
+      <p>{countdown.hours} {data.language[language.status].hours}</p>
+      <p>{countdown.minutes} {data.language[language.status].minutes}</p>
+      <p>{countdown.seconds} {data.language[language.status].seconds}</p>
     </div>
   );
 };
