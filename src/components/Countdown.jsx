@@ -33,7 +33,7 @@ const Countdown = () => {
         setCountdown({ days, hours, minutes, seconds });
       }
     } else {
-      // Configurar el contador inicial de 14 días si no hay valor en el localStorage
+      // Configurar el contador inicial de n días si no hay valor en el localStorage
       resetCountdown();
     }
   }, []);
@@ -66,7 +66,7 @@ const Countdown = () => {
   }, []);
 
   const resetCountdown = () => {
-    const initialCountdown = { days: 14, hours: 0, minutes: 0, seconds: 0 };
+    const initialCountdown = { days: 5, hours: 5, minutes: 5, seconds: 5 };
     updateLocalStorage(initialCountdown);
     setCountdown(initialCountdown);
   };
