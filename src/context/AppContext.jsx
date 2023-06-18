@@ -8,7 +8,7 @@ const AppContextProvider = ({children}) => {
 
     const language = useStatus('languageStorage',localStorage.getItem('languageStorage')?JSON.parse(localStorage.getItem('languageStorage')):'english');
 
-    const theme = useStatus('themeStorage',localStorage.getItem('themeStorage')?JSON.parse(localStorage.getItem('themeStorage')):'Violet');
+    const theme = useStatus('themeStorage',localStorage.getItem('themeStorage')?JSON.parse(localStorage.getItem('themeStorage')):'Magenta');
 
 
     return <AppContext.Provider value={{language,
