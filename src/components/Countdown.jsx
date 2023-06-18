@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
-import '../styles/Countdown.css';
 import data from '../data.json';
 
 const Countdown = () => {
@@ -89,14 +88,15 @@ const Countdown = () => {
 
   const timeList=['days','hours','minutes','seconds'];
 
+
   return (
     <div className="flex items-center gap-2">
       {timeList.map(t=> <div key={t} className="flex flex-col items-center gap-5" >
-        <section className="w-32 h-32 relative">
+        <section className="w-16 h-16 sm:w-32 sm:h-32 relative cursor-crosshair">
           <div className="w-full h-1/2 rounded-md opacity-75" style={{backgroundColor:'var(--text)'}}/>
           <div className="w-full h-1/2 rounded-md opacity-75" style={{backgroundColor:'var(--text)'}}/>
           <div className="w-full h-1/2 bg-black/25 absolute top-0 z-20 rounded-md"/>
-          <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl text${theme.status}`} >{countdown[t]}</div>
+          <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl sm:text-6xl`} style={{color:`var(--text${theme.status})`}} >{countdown[t]}</div>
         </section>
 
         <p className="text-xs" style={{color:'var(--text)'}} >{data.language[language.status][t]}</p>

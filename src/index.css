@@ -23,10 +23,18 @@ span {
 
 
     --text: hsl(237, 18%, 59%);
-    --violetText: hsl(345, 95%, 68%);
-    --violet: hsl(236, 21%, 26%);
-    --darkViolet: hsl(235, 16%, 14%);
-    --veryDarkViolet: hsl(234, 17%, 12%);
+
+
+    --color: hsl(236, 21%, 26%);
+    --darkColor: hsl(235, 16%, 14%);
+    --veryDarkColor: hsl(234, 17%, 12%);
+
+    --textMagenta: hsl(345, 95%, 68%);
+    --textViolet: hsl(290, 65%, 50%);
+    --textCyan: hsl(197, 65%, 50%);
+    --textTeal: hsl(180, 100%, 25%);
+    --textOrange: hsl(19, 68%, 52%);
+
 
 }
 
