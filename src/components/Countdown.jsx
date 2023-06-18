@@ -94,7 +94,7 @@ const Countdown = () => {
       {timeList.map(t=> <div key={t} className="flex flex-col items-center gap-5" >
         <section className="w-16 h-16 sm:w-32 sm:h-32 relative cursor-crosshair">
           <div className="w-full h-1/2 rounded-md opacity-75" style={{backgroundColor:'var(--text)'}}/>
-          <div className="w-full h-1/2 rounded-md opacity-75" style={{backgroundColor:'var(--text)'}}/>
+          <div className="w-full h-1/2 rounded-md opacity-75 shadowBottom" style={{backgroundColor:'var(--text)'}}/>
           <div className="w-full h-1/2 bg-black/25 absolute top-0 z-20 rounded-md"/>
           <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl sm:text-6xl`} style={{color:`var(--text${theme.status})`}} >{countdown[t]}</div>
         </section>
