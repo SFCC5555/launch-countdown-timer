@@ -1,11 +1,12 @@
+import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { useContext } from "react";
-import { AppContext } from "../context/AppContext";
 import data from '../data.json';
 
 const Countdown = () => {
 
-  const {language,theme} = useContext(AppContext);
+  const language = useSelector(state=>state.language);
+  const theme = useSelector(state=>state.theme);
+
 
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
@@ -96,10 +97,10 @@ const Countdown = () => {
           <div className="w-full h-1/2 rounded-md opacity-75" style={{backgroundColor:'var(--text)'}}/>
           <div className="w-full h-1/2 rounded-md opacity-75 shadowBottom" style={{backgroundColor:'var(--text)'}}/>
           <div className="w-full h-1/2 bg-black/25 absolute top-0 z-20 rounded-md"/>
-          <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl sm:text-6xl`} style={{color:`var(--text${theme.status})`}} >{countdown[t]}</div>
+          <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl sm:text-6xl`} style={{color:`var(--text${theme})`}} >{countdown[t]}</div>
         </section>
 
-        <p className="text-xs" style={{color:'var(--text)'}} >{data.language[language.status][t]}</p>
+        <p className="text-xs" style={{color:'var(--text)'}} >{data.language[language][t]}</p>
       </div>)}
     </div>
   );
