@@ -41,6 +41,7 @@ span {
 body {
 
     font-family: var(--mainFont);
+    height: 100svh;
 
 }
 
