@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux';
-import '../styles/Footer.css';
 import hills from '../assets/images/pattern-hills.svg';
 
 const Footer = () => {

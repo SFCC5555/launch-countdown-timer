@@ -1,0 +1,15 @@
+$social-networks: ('facebook','instagram','pinterest');
+
+$colors: ('Magenta','Violet','Cyan','Teal','Orange');
+
+@each $social-network in $social-networks {
+    @each $color in $colors {
+        .#{$social-network}#{$color} {
+            background-image: url('./src/assets/images/icon-#{$social-network}.svg');
+        }
+
+        .#{$social-network}#{$color}:hover {
+            background-image: url('./src/assets/images/icon-#{$social-network}-#{$color}.svg');
+        }
+    }
+} 

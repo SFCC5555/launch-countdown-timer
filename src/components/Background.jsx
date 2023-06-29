@@ -1,4 +1,3 @@
-import '../styles/Background.css';
 import stars from '../assets/images/bg-stars.svg'
 
 const Background = () => {

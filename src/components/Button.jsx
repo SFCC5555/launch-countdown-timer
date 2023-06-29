@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import data from '../data.json';
 import { useSelector } from 'react-redux';
-import '../styles/Button.css'
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { changeLanguage } from '../redux/languageSlice';

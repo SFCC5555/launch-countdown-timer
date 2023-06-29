@@ -1,4 +1,3 @@
-import './App.css';
 import { Title } from './components/Title';
 import { Countdown } from './components/Countdown';
 import { Footer } from './components/Footer';

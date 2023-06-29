@@ -1,20 +1,19 @@
+@use '../src/styles/Background';
+@import '../src/styles/Button';
+@import '../src/styles/Footer';
+
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-span {
-    display: inline-block;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 :root {
@@ -35,7 +34,6 @@ span {
     --textTeal: hsl(180, 100%, 25%);
     --textOrange: hsl(19, 68%, 52%);
 
-
 }
 
 body {
@@ -43,6 +41,13 @@ body {
     font-family: var(--mainFont);
     height: 100svh;
 
+}
+
+span {
+    display: inline-block;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .shadowBottom {
