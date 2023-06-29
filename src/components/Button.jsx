@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { changeLanguage } from '../redux/languageSlice';
 import { changeTheme } from '../redux/themeSlice';
+import '../styles/Button.scss'
 
 const Button = ({concept,list}) => {
 
