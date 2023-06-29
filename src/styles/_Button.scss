@@ -3,7 +3,7 @@ $languages: ('english', 'spanish', 'german', 'french', 'italian');
 @each $language in $languages {
   .#{$language}Icon {
 
-    background-image: url('./src/assets/images/#{$language}.png');
+    background-image: url('../assets/images/#{$language}.png');
 
 }
 }
