@@ -1,5 +1,5 @@
-@use '../src/styles/Button';
-@use '../src/styles/Footer';
+@forward '../src/styles/Button';
+@forward '../src/styles/Footer';
 @use '../src/styles/Background';
 
 
